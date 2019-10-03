@@ -20,7 +20,7 @@ public class Connection {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = (Connection) DriverManager.
-                getConnection("jdbc:mysql://localhost/keeptoo_systems", "root", "");
+                getConnection("jdbc:mysql://localhost/school_demo", "root", "");
             return con;
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Connection.class.getName()).log(Level.SEVERE, null, ex);
