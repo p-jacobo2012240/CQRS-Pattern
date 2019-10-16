@@ -19,6 +19,7 @@ public class Connection {
     public static Connection Connnected() throws SQLException {
         try {
             Class.forName("com.mysql.jdbc.Driver");
+			//non using
             Connection con = (Connection) DriverManager.
                 getConnection("jdbc:mysql://localhost/school_demo", "root", "");
             return con;
